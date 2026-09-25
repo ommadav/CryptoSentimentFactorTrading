@@ -1,0 +1,60 @@
+STEP 9 - DISTRIBUTION SHIFT & PREDICTION DIAGNOSTICS
+=========================================================
+
+Validation period: 2020-04-11 -> 2020-10-04
+Test period: 2020-10-05 -> 2021-03-31
+
+FACTOR SHIFT
+------------
+Mean absolute factor test shift (Z): 2.0260
+Factors with absolute test shift > 1 standard deviation: 21
+
+MULTICOLLINEARITY
+-----------------
+Factor pairs with |r| > 0.90: 27
+Factor pairs with |r| > 0.95: 16
+
+ACTUAL RETURN SHIFT
+-------------------
+Validation mean return: 0.00297277
+Test mean return: 0.01038760
+Validation std: 0.02930163
+Test std: 0.04111054
+Mean shift Z-score: 0.2531
+Test/Validation std ratio: 1.4030
+
+PREDICTION SHIFT
+----------------
+AR5: prediction mean validation = NaN, test = NaN, shift Z = NaN
+AR5: prediction bias validation = NaN, test = -0.00870243
+AR5: prediction correlation validation = NaN, test = -0.0216
+
+Ridge: prediction mean validation = NaN, test = NaN, shift Z = NaN
+Ridge: prediction bias validation = NaN, test = -0.01398280
+Ridge: prediction correlation validation = NaN, test = 0.0804
+
+BaggedRegression: prediction mean validation = NaN, test = NaN, shift Z = NaN
+BaggedRegression: prediction bias validation = NaN, test = -0.02711664
+BaggedRegression: prediction correlation validation = NaN, test = -0.0377
+
+RandomForest: prediction mean validation = NaN, test = NaN, shift Z = NaN
+RandomForest: prediction bias validation = NaN, test = -0.03316125
+RandomForest: prediction correlation validation = NaN, test = 0.0411
+
+LSBoost: prediction mean validation = NaN, test = NaN, shift Z = NaN
+LSBoost: prediction bias validation = NaN, test = -0.02583858
+LSBoost: prediction correlation validation = NaN, test = -0.0054
+
+
+SIGNAL SHIFT
+------------
+AR5: Validation BUY/HOLD/SELL = 0/0/0
+AR5: Test BUY/HOLD/SELL = 8/169/1
+Ridge: Validation BUY/HOLD/SELL = 0/0/0
+Ridge: Test BUY/HOLD/SELL = 0/55/123
+BaggedRegression: Validation BUY/HOLD/SELL = 0/0/0
+BaggedRegression: Test BUY/HOLD/SELL = 4/2/172
+RandomForest: Validation BUY/HOLD/SELL = 0/0/0
+RandomForest: Test BUY/HOLD/SELL = 0/2/176
+LSBoost: Validation BUY/HOLD/SELL = 0/0/0
+LSBoost: Test BUY/HOLD/SELL = 7/45/126

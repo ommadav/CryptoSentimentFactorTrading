@@ -1,0 +1,4 @@
+Model,SelectedThreshold,ValidationSharpe,ValidationReturn,ValidationTrades
+AR5,0.0095,3.06025279341162,0.205323488200519,20
+OriginalRidge,0.0013,2.76089228305307,0.139616352507151,21
+ReducedRidge,NaN,-Inf,-Inf,0

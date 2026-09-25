@@ -1,0 +1,72 @@
+STEP 10 — REDUCED-FACTOR / MULTICOLLINEARITY EXPERIMENT
+============================================================
+
+Experiment purpose:
+Test whether reducing highly correlated factors changes out-of-sample Ridge behavior.
+
+Factor reduction rule:
+Correlation calculated using TRAINING DATA ONLY.
+Threshold: |r| >= 0.90
+For highly correlated pairs, the factor with lower training variance was removed.
+
+Factor counts:
+Original factors: 47
+Removed factors:  13
+Reduced factors:  34
+
+Fixed periods:
+Train:      06-Jan-2018 -> 10-Apr-2020
+Validation: 11-Apr-2020 -> 04-Oct-2020
+Test:       05-Oct-2020 -> 31-Mar-2021
+
+Validation threshold selection:
+
+AR5: threshold=0.0095 | Sharpe=3.0603 | Return=20.53% | Trades=20
+OriginalRidge: threshold=0.0013 | Sharpe=2.7609 | Return=13.96% | Trades=21
+ReducedRidge: threshold=NaN | Sharpe=-Inf | Return=-Inf% | Trades=0
+
+Final test results:
+
+AR5
+  RMSE: 0.042473
+  MAE: 0.030789
+  R2: -0.073429
+  Return: -17.81%
+  Sharpe: -1.5637
+  Max DD: -17.81%
+  Final equity: 8218.90
+  Trades: 26
+
+OriginalRidge
+  RMSE: 0.043135
+  MAE: 0.031347
+  R2: -0.107159
+  Return: -74.95%
+  Sharpe: -3.5733
+  Max DD: -76.52%
+  Final equity: 2505.04
+  Trades: 17
+
+ReducedRidge
+  RMSE: 0.042438
+  MAE: 0.030742
+  R2: -0.071660
+  Return: 0.00%
+  Sharpe: NaN
+  Max DD: 0.00%
+  Final equity: 10000.00
+  Trades: 0
+
+Buy & Hold:
+  Return: 444.10%
+  Sharpe: 4.8273
+  Max DD: -25.17%
+  Final equity: 54410.02
+
+Methodological notes:
+- Test data was not used for factor selection.
+- Test data was not used for threshold selection.
+- Correlation analysis used training observations only.
+- Validation was used for threshold selection.
+- Final models were refitted using training + validation.
+- The test period remained untouched until final evaluation.

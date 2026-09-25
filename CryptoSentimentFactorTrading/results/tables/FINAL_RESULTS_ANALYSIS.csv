@@ -1,0 +1,19 @@
+Metric,Value
+Test RMSE,0.0427924597394309
+Test MAE,0.0311292848159013
+Test R2,-0.0687422589236251
+Directional Accuracy (%),50
+Initial Capital,10000
+Final Capital,10049.3655045258
+Strategy Return (%),0.493655045258001
+Strategy Sharpe,0.118651387962756
+Strategy Sortino,0.047916243381758
+Strategy Max Drawdown (%),-7.24833850306736
+Strategy Win Rate (%),44.4444444444444
+Profit Factor,1.08083487675037
+Number of Trades,9
+Buy & Hold Final Capital,53137.5920308688
+Buy & Hold Return (%),431.375920308688
+Buy & Hold Sharpe,4.01035101928194
+Buy & Hold Max Drawdown (%),-25.1748461971953
+Signal Threshold (%),1.2

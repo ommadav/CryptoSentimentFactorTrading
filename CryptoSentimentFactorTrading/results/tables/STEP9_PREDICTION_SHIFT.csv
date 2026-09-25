@@ -1,0 +1,6 @@
+Model,ValidationPredictionMean,TestPredictionMean,ValidationPredictionStd,TestPredictionStd,ValidationPredictionMin,ValidationPredictionMax,TestPredictionMin,TestPredictionMax,PredictionMeanShiftZ,ValidationActualMean,TestActualMean,ValidationActualStd,TestActualStd,ValidationPredictionBias,TestPredictionBias,ValidationPredictionCorrelation,TestPredictionCorrelation
+AR5,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,-0.00870243238751924,NaN,-0.021609758162404
+Ridge,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,-0.0139828020808384,NaN,0.0804300835564515
+BaggedRegression,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,-0.0271166406225843,NaN,-0.0376881606304551
+RandomForest,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,-0.0331612540481169,NaN,0.0411065701332482
+LSBoost,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,-0.0258385824642503,NaN,-0.00537935460043714

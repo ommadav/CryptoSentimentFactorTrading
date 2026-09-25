@@ -1,0 +1,106 @@
+STEP 9B — PREDICTION & THRESHOLD STABILITY DIAGNOSTICS
+============================================================
+
+Purpose:
+Compare model prediction distributions and trading signals between validation and the untouched test period.
+
+Data periods:
+Train:      06-Jan-2018 -> 10-Apr-2020
+Validation: 11-Apr-2020 -> 04-Oct-2020
+Test:       05-Oct-2020 -> 31-Mar-2021
+
+Methodology:
+- Validation models are trained only on training data.
+- Step 8 test predictions are reused unchanged.
+- Step 8 thresholds are reused unchanged.
+- No test-set tuning is performed.
+
+Prediction statistics:
+
+MODEL: AR5
+  Validation mean prediction: 0.00078929
+  Test mean prediction:       0.00168517
+  Validation std prediction:  0.00450659
+  Test std prediction:        0.00345494
+  Validation bias:            -0.00218349
+  Test bias:                  -0.00870243
+  Validation RMSE:            0.02927553
+  Test RMSE:                  0.04212229
+  Validation correlation:     0.08240517
+  Test correlation:           -0.02160976
+
+MODEL: Ridge
+  Validation mean prediction: -0.00037592
+  Test mean prediction:       -0.00359520
+  Validation std prediction:  0.00059660
+  Test std prediction:        0.00281973
+  Validation bias:            -0.00334869
+  Test bias:                  -0.01398280
+  Validation RMSE:            0.02931465
+  Test RMSE:                  0.04319102
+  Validation correlation:     0.17125495
+  Test correlation:           0.08043008
+
+MODEL: Bagged
+  Validation mean prediction: -0.01284299
+  Test mean prediction:       -0.01672904
+  Validation std prediction:  0.01705992
+  Test std prediction:        0.00757663
+  Validation bias:            -0.01581576
+  Test bias:                  -0.02711664
+  Validation RMSE:            0.03522768
+  Test RMSE:                  0.04996321
+  Validation correlation:     0.15318117
+  Test correlation:           -0.03768816
+
+MODEL: RF
+  Validation mean prediction: -0.01059235
+  Test mean prediction:       -0.02277365
+  Validation std prediction:  0.01393635
+  Test std prediction:        0.00970842
+  Validation bias:            -0.01356513
+  Test bias:                  -0.03316125
+  Validation RMSE:            0.03324116
+  Test RMSE:                  0.05330427
+  Validation correlation:     0.15502708
+  Test correlation:           0.04110657
+
+MODEL: LSBoost
+  Validation mean prediction: -0.01279980
+  Test mean prediction:       -0.01545098
+  Validation std prediction:  0.02098044
+  Test std prediction:        0.01468998
+  Validation bias:            -0.01577258
+  Test bias:                  -0.02583858
+  Validation RMSE:            0.03717740
+  Test RMSE:                  0.05068785
+  Validation correlation:     0.12926971
+  Test correlation:           -0.00537935
+
+Signal stability:
+
+AR5
+  Threshold: 0.0074
+  Validation BUY/HOLD/SELL: 11 / 160 / 6
+  Test BUY/HOLD/SELL:       8 / 169 / 1
+
+Ridge
+  Threshold: 0.0013
+  Validation BUY/HOLD/SELL: 0 / 166 / 11
+  Test BUY/HOLD/SELL:       0 / 55 / 123
+
+Bagged
+  Threshold: 0.0010
+  Validation BUY/HOLD/SELL: 40 / 6 / 131
+  Test BUY/HOLD/SELL:       4 / 2 / 172
+
+RF
+  Threshold: 0.0024
+  Validation BUY/HOLD/SELL: 30 / 33 / 114
+  Test BUY/HOLD/SELL:       0 / 2 / 176
+
+LSBoost
+  Threshold: 0.0063
+  Validation BUY/HOLD/SELL: 11 / 81 / 85
+  Test BUY/HOLD/SELL:       7 / 45 / 126
+

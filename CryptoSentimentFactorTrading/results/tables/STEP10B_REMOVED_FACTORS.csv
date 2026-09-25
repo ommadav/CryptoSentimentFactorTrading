@@ -1,0 +1,13 @@
+Index,RemovedPair
+1,SMA10 vs EMA12 (r = 0.99792)
+2,SMA20 vs EMA26 (r = 0.99474)
+3,SMA5 vs SMA10 (r = 0.99003)
+4,Momentum7 vs SentimentMomentumInteraction (r = 0.97517)
+5,SMA20Distance vs EMA26Distance (r = 0.95846)
+6,SMA5 vs SMA20 (r = 0.95738)
+7,SMA20Distance vs EMA12Distance (r = 0.95495)
+8,MACD vs MACDSignal (r = 0.94724)
+9,ReturnLag1 vs SentimentReturnInteraction (r = 0.94475)
+10,Momentum30 vs SMA50Distance (r = 0.93801)
+11,Momentum14 vs SMA20Distance (r = 0.93718)
+12,MACD vs Momentum30 (r = 0.90345)

@@ -1,0 +1,41 @@
+STEP 10B - FAIR THRESHOLD STABILITY EXPERIMENT
+============================================================
+
+Dataset:
+47 original factors reduced using training-only correlation filtering.
+
+Correlation threshold: 0.90
+Original factors: 47
+Reduced factors: 35
+Maximum |r| before: 0.99792
+Maximum |r| after : 0.89783
+
+Threshold methodology:
+Thresholds are derived from validation prediction percentiles.
+The test set is never used for threshold selection.
+This avoids penalizing models whose prediction magnitudes are naturally smaller.
+
+AR5 selected percentile: 20%
+AR5 threshold: 0.00086042
+Original Ridge selected percentile: 15%
+Original Ridge threshold: 0.00198191
+Reduced Ridge selected percentile: 25%
+Reduced Ridge threshold: 0.00283876
+
+TEST RESULTS
+------------------------------------------------------------
+AR5 return: 11.4028%
+AR5 Sharpe: 0.6646
+AR5 max DD: -51.6859%
+
+Original Ridge return: -79.8954%
+Original Ridge Sharpe: -3.7054
+Original Ridge max DD: -82.8683%
+
+Reduced Ridge return: -80.1051%
+Reduced Ridge Sharpe: -3.7814
+Reduced Ridge max DD: -82.0889%
+
+Buy & Hold return: 443.5463%
+Buy & Hold Sharpe: 4.8243
+Buy & Hold max DD: -25.1748%

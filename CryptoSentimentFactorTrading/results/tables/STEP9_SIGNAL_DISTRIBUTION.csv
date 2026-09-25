@@ -1,0 +1,6 @@
+Model,Threshold,ValidationBUY,ValidationHOLD,ValidationSELL,TestBUY,TestHOLD,TestSELL
+AR5,0.0074,0,0,0,8,169,1
+Ridge,0.0013,0,0,0,0,55,123
+BaggedRegression,0.001,0,0,0,4,2,172
+RandomForest,0.0024,0,0,0,0,2,176
+LSBoost,0.0063,0,0,0,7,45,126
