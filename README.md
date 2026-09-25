@@ -546,6 +546,20 @@ This project was developed as an academic research project to study the applicat
 - Model Evaluation
 
 ---
+## Generative AI Acknowledgment
+
+Generative AI tools, including ChatGPT, were used as a supporting tool during the development of this project.
+
+The assistance included:
+- Brainstorming and refining the project workflow.
+- Assistance with MATLAB code development and debugging.
+- Reviewing data-processing and model-evaluation logic.
+- Assistance with documentation and README preparation.
+- Helping identify implementation issues and improve code robustness.
+
+All AI-assisted code and suggestions were reviewed, tested, modified where necessary, and integrated by the project team. The team is responsible for understanding, verifying, and explaining the final implementation, experimental results, and conclusions.
+
+No AI-generated data or fabricated experimental results were used. All reported results were obtained from the project's actual MATLAB experiments and datasets.
 
 # ⚠️ Disclaimer
 
